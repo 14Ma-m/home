@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Switcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="section" id="section1">
+    <div class="video">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Video 1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="description">
+      <h2>Video 1: Web Basics</h2>
+      <p>This video explains the fundamentals of web development including HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+
+  <div class="section" id="section2" style="display: none;">
+    <div class="video">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/3fumBcKC6RE" 
+        title="Video 2" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="description">
+      <h2>Video 2: Advanced CSS</h2>
+      <p>This video covers advanced CSS concepts like Flexbox, Grid, transitions, and animations to enhance UI design.</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="showPrev()">Prev</button>
+    <button onclick="showNext()">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
